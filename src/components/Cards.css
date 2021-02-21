@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10vh;
+    background-color:linear-gradient (aquamarine, rgb(223, 184, 140));
   }
   
   .swipe {

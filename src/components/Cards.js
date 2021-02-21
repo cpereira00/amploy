@@ -5,7 +5,7 @@ import "./EmpyButtons.css";
 import CheckIcon from '@material-ui/icons/Check';
 import IconButton from "@material-ui/core/IconButton"
 import ClearIcon from '@material-ui/icons/Clear';
-import axios from "./axios";
+//import axios from "./axios";
 
 function Cards() {
     const[people, setPeople] = useState([
@@ -28,15 +28,15 @@ function Cards() {
 
     ]);
        
-    useEffect(() => {
-        async function fetchData(){
-            const req = await axios.get("/amploy/cards");
+    // useEffect(() => {
+    //     async function fetchData(){
+    //         const req = await axios.get("/amploy/cards");
 
-            setPeople(req.data);
-        }
+    //         setPeople(req.data);
+    //     }
 
-        fetchData();
-    }, [])
+    //     fetchData();
+    // }, [])
 
 
     const swiped = (direction, nameToDelete) => {
